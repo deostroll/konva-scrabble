@@ -1,0 +1,12 @@
+{
+  "name": "konva_scrabble",
+  "version": "0.0.1",
+  "description": "a quick fiddle",
+  "private": true,
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-wiredep": "^2.0.0",
+    "grunt-contrib-connect": "^0.11.2"
+  }
+}

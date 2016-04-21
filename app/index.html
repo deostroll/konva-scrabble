@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>konva scrabble Fiddle</title>
+
+        <!-- bower:css -->
+        <!-- endbower -->
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body>
+      <div class="">
+        <div data-bind="foreach: options" style="display:inline">
+          <input type="button" data-bind="value: $data, click: $root.set.bind($root, $data)"/>
+        </div>
+        <span>Current selection: <span data-bind="text:selection"></span></span>
+      </div>
+      <br>
+      <div id="board" class="float">
+      </div>
+      <div class="float" id="result">
+        <input type="text" disabled data-bind="value: ko.toJSON(tiles)" />
+        <table>
+          <tbody data-bind="foreach: bonuses">
+            <tr>
+              <td>
+                ( <span data-bind="text: x"></span> , <span data-bind="text: y"></span>)
+              </td>
+              <td data-bind="text: type">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- bower:js -->
+      <script src="bower_components/konva/konva.min.js"></script>
+      <script src="bower_components/knockout/dist/knockout.js"></script>
+      <!-- endbower -->
+      <script src="scripts/main.js"></script>
+    </body>
+</html>

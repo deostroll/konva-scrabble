@@ -1,0 +1,9 @@
+{
+  "name": "konva scrabble",
+  "description": "a quick fiddle",
+  "version": "0.0.0",
+  "dependencies": {
+    "konva": "~0.12.4",
+    "knockout": "~3.4.0"
+  }
+}
